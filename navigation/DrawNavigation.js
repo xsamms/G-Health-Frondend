@@ -17,7 +17,7 @@ function DrawNavigation(props) {
         component={Tabs}
         options={{
           headerStyle: { backgroundColor: "#ff9f32" },
-          headerTitle: () => <MainHeader title="GleeApp" />,
+          headerTitle: () => <MainHeader title="G-Health" />,
         }}
       />
       <Drawer.Screen

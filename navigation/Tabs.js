@@ -36,7 +36,7 @@ const Tabs = () => {
         }}
       />
       <Tab.Screen
-        name="Symptom"
+        name="Articles"
         component={Symptom}
         options={{
           tabBarIcon: ({ color }) => (

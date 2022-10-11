@@ -16,7 +16,6 @@
     "@react-navigation/native-stack": "^6.6.2",
     "@reduxjs/toolkit": "^1.8.2",
     "apisauce": "^2.1.5",
-    "axios": "^0.27.2",
     "expo": "~45.0.0",
     "expo-app-loading": "~2.0.0",
     "expo-checkbox": "~2.1.0",
@@ -42,7 +41,8 @@
     "redux": "^4.2.0",
     "redux-devtools-extension": "^2.13.9",
     "socket.io-client": "^4.5.1",
-    "yup": "^0.32.11"
+    "yup": "^0.32.11",
+    "expo-updates": "~0.13.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

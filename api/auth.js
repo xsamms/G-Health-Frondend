@@ -1,7 +1,8 @@
 import apiClient from "./client";
 
-const login = async (email, password) =>
-  await apiClient.post("/auth/login/", { email, password });
+const login = async (email, password) => {
+  return await apiClient.post("/auth/login/", { email, password });
+};
 
 const register = async (
   fullname,

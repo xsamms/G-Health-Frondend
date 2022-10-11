@@ -9,7 +9,7 @@ import {
   ImageBackground,
   ScrollView,
 } from "react-native";
-import { Input, Icon, Button } from "native-base";
+import { Input, Icon, Button, Spinner } from "native-base";
 import { MaterialIcons } from "@expo/vector-icons";
 import * as ImagePicker from "expo-image-picker";
 import { FontAwesome } from "@expo/vector-icons";
@@ -118,7 +118,7 @@ function Home({ navigation }) {
           <View>
             <ScrollView horizontal={true}>
               {isLoading ? (
-                <Text>Loading... </Text>
+                <Spinner color="warning.500" size="lg" />
               ) : error ? (
                 <Text>Something wen't wrong </Text>
               ) : (
@@ -144,7 +144,7 @@ function Home({ navigation }) {
           </View>
           <ScrollView contentContainerStyle={styles.productsScrll}>
             {isLoading ? (
-              <Text>Loading...</Text>
+              <Spinner color="warning.500" size="lg" />
             ) : error ? (
               <Text>Something went wrong</Text>
             ) : (
@@ -159,7 +159,7 @@ function Home({ navigation }) {
                   >
                     <Image
                       style={styles.productsImg}
-                      source={{ uri: item.productImage }}
+                      source={{ uri: item.productImage.url }}
                     />
                     <View style={{ marginBottom: 5 }}>
                       <Text style={{ fontWeight: "700" }}>{item.name}</Text>

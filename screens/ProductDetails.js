@@ -34,7 +34,10 @@ function ProductDetails(props) {
   return (
     <ScrollView style={styles.container}>
       <View>
-        <Image style={styles.productsImg} source={{ uri: item.productImage }} />
+        <Image
+          style={styles.productsImg}
+          source={{ uri: item.productImage.url }}
+        />
       </View>
       <View>
         <Text style={styles.productTitle}>{item.name}</Text>

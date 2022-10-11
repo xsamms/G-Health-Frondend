@@ -1,7 +1,7 @@
 import { create } from "apisauce";
 
 const apiClient = create({
-  baseURL: "http://10.0.2.2:5002/api",
+  baseURL: "https://g-health.herokuapp.com/api",
 });
 apiClient.setHeaders({
   Accept: "application/json",

@@ -42,8 +42,12 @@ function SignIn({ navigation }) {
   const onSubmit = async ({ email, password }) => {
     const result = await AuthApi.login(email, password);
 
-    if (!result.ok) return setError(true);
-    setError(false);
+    if (!result.ok) {
+      return setError(true);
+    } else {
+      setError(false);
+    }
+
     const user = jwtDecode(result.data.token);
 
     authContext.setUser(user);

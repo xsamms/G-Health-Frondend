@@ -80,7 +80,7 @@ function Cart({ navigation }) {
                   return (
                     <View key={cartItem._id} style={styles.cartItms}>
                       <Image
-                        source={{ uri: cartItem.productImage }}
+                        source={{ uri: cartItem.productImage.url }}
                         style={styles.productsImg}
                       />
                       <View

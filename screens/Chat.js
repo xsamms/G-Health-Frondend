@@ -80,7 +80,7 @@ function Chat(props) {
   }, []);
 
   useEffect(() => {
-    socket = io("http://10.0.2.2:5002");
+    socket = io("https://g-health.herokuapp.com");
     socket.emit("setup", user);
     socket.on("connected", () => setSocketConnected(true));
     // socket.on("typing", () => setIsTyping(true));
@@ -155,7 +155,7 @@ function Chat(props) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#ff9f32",
   },
 });
 export default Chat;
